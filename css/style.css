@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&family=Source+Serif+4:wght@300;400;500;700&family=Supermercado+One&display=swap');
+
+:root{
+    --blue: rgb(74, 7, 182);
+    --violet: #c63bfa;    
+    --primary-color: #ff5e14;
+    --bg-color: #151414;
+    --light-black: #373636;
+    --light-black-2: #2e2e2e;
+    --light-black-3: #202020;
+    --dark-grey: #757575;
+    --dark-grey-2: #7e7e7e;
+    --dark-grey-3: #878787;
+    --facebook: #3b5998;
+    --twitter: #55acee;
+    --youtube: rgb(238, 9, 9);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+#MainAboutUs, #MainCourse, #MainFaculty{
+    background-image: linear-gradient(to right, var(--light-black-2), var(--violet), var(--light-black-3) );
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+/* <------- HOME PAGE-------> */
+
+/* Navbar Css */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.logo_top{
+    color: #fff !important;
+    font-size: 20px !important;
+    text-shadow: 2px 2px var(--violet);
+}
+
+.navbar #a{
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+    color: var(--violet) !important;
+    transition: 1s;
+}
+
+.navbar #a:hover{
+    color: #fff;
+}
+
+.navbar #active{
+    background-color: #fff;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+/* Slider Css */
+.carousel-item{
+    height: 600px;
+}
+ .carousel-image-1{
+    background: url("../images/carso1.jpg") no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
+}
+.carousel-image-2{
+    background: url("../images/carso2.jpg");
+    background-size: cover;
+    background-position: 70%;
+}
+.carousel-image-3{
+    background: url("../images/carso3.jpg");
+    background-size: cover;
+    background-position: 50%;
+}
+
+.carousel-caption h1{
+    font-size: 8rem;
+    text-shadow: 2px 4px var(--bg-color);
+    font-weight: 400;
+}
+
+.carousel-caption h2{
+    font-size: 4rem;
+    text-shadow: 2px 4px var(--bg-color);
+    font-weight: 400;
+}
+
+/* Home Course  Css */
+#home-course{
+    position: relative;
+    background: url('../images/lights.jpg');
+    min-height: 200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.home_course_sec1 h2{
+    font-size: 2rem;
+}
+
+.home_course_sec1 p{
+    font-size: 20px;
+    padding: 1rem 0;
+}
+
+.home_course_sec2{
+    position: relative;
+    margin-top: 20vh;
+}
+
+/* About Section Css  */
+#about, #gal{
+    background-image: linear-gradient(to right, var(--light-black-2), var(--violet), var(--light-black-3) );
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+#about .image{
+    height: 28rem;
+    background: url("../images/logo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-blend-mode: screen;
+    border-radius: 50%;
+    margin-top: 3vh;
+}
+
+#about .content{
+    padding: 2rem;
+}
+
+#about .content h3{
+    font-size: 3rem;
+    text-shadow: 2px 2px var(--light-black-2);
+}
+
+#about .content p{
+    font-size: 3vh;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+#about .btn{
+    padding: 0.5rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: .2rem solid #fff;
+}
+
+#home-course a .btn2{
+    padding: 0.5rem 4rem;
+    text-decoration: none !important;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background: none;
+    color: #fff !important;
+    font-size: 18px;
+    cursor: pointer;
+    border: .2rem solid #fff;
+}
+
+/* Gallery Css */
+#gal img{
+    border-radius: 0.5rem;
+}
+
+#gal h1{
+    font-size: 3rem;
+    text-shadow: 2px 2px var(--light-black-2);
+}
+
+#gal p{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px var(--light-black-2);
+}
+
+/* ------HOME PAGE CSS ENDS HERE------ */
+
+/* <-------ABOUT US PAGE-----> */
+#MainAboutUs .header_background{
+    background-image: url("../images/about-cover.jpg");
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    background-size: cover;  
+    background-position: fixed;
+    height: 50vh;
+    border-bottom: 2px solid var(--light-black-3) !important;
+}
+
+.school_history_text h2{
+    font-size: 4rem;
+    text-shadow: 2px 2px var(--light-black-3);
+}
+
+.school_history_sec .image{
+    background-image: url("../images/about_2.jpg");
+    height: 12rem; 
+    background-size: cover;
+    background-position: center ;
+    background-blend-mode: screen;
+    border-radius: 50%;
+}
+
+#MainAboutUs .header-text h2{
+    font-size: 5rem;
+    text-shadow: 3px 3px var(--light-black-3);
+    word-spacing: 15px;
+    letter-spacing: 5px;
+}
+
+#MainAboutUs .header-text h4{
+    font-size: 1.5rem;
+    text-align: center !important;
+    text-shadow: 2px 2px var(--light-black-3);
+}
+
+.timing_table table{
+    width: 500px;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    background-color: var(--light-black-3);
+}
+
+.school_history_text2 p{
+    text-align: justify !important;
+}
+
+
+/* <--------ABOUT US PAGE ENDS HERE---------> */
+
+/* <-------FACULTY PAGE CSS--------------> */
+#MainFaculty .header_image{
+    background-image: url("../images/faculty_background.jpg");
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    background-size: cover;  
+    background-position: 90%;
+    height: 50vh;
+    border-bottom: 2px solid var(--light-black-3) !important;
+}
+
+#MainFaculty .header_image h2{
+    font-size: 5rem;
+    text-shadow: 4px 4px var(--light-black-3);
+    word-spacing: 15px;
+    letter-spacing: 5px;
+}
+
+#MainFaculty .header_image h4{
+    font-size: 1.5rem;
+    text-align: center !important;
+    text-shadow: 2px 2px var(--light-black-3);
+}
+
+.school_mentor_heading h2{
+    font-size: 3rem;
+}
+
+.school_mentor_heading span{
+    font-size: 1.5rem;
+}
+
+.mentor .mentor_img{
+    background-image: url("../images/faculty_pic1.jpg");
+    background-size: cover;
+    background-blend-mode: screen;
+    border-radius: 2vh;
+    height: 23rem;
+}
+
+.mentor h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mentor span{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mentor p{
+    font-size: 1.2rem;
+    text-align: justify;
+    word-spacing: 2px !important;
+}
+
+.mentor_details p{
+    text-align: center !important;
+}
+
+.details_icon a{
+    color: #fff;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.details_icon a:hover{
+    color: var(--bg-color);
+}
+
+/* <-------FACULTY PAGE CSS ENDS HERE--------------> */
+
+/* <--------COURSE PAGE-------> */
+#MainCourse .header_image{
+    background-image: url("../images/course_background.jpg");
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    background-size: cover;  
+    height: 50vh;
+    background-position: 75%;
+    border-bottom: 2px solid var(--light-black-3) !important;
+}
+
+#MainCourse .header_image h2{
+    font-size: 5rem;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    text-align: center !important;
+    text-shadow: 2px 2px var(--light-black-3);
+}
+
+#MainCourse .header_image h4{
+    font-size: 1.5rem;
+    text-align: center !important;
+    text-shadow: 2px 2px var(--light-black-3);
+}
+
+.school_course_heading h2{
+    font-size: 3rem;
+    text-shadow: 2px 2px var(--light-black-3);
+}
+
+.school_course_heading span{
+    font-size: 1.5rem;
+}
+
+.vocal_guitar_section .card .card-body h4, .key_rhythm_section .card .card-body h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.vocal_guitar_section .card .card-body .sub, .key_rhythm_section .card .card-body .sub{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.vocal_guitar_section .card .card-body p, .key_rhythm_section .card .card-body p{
+    text-align: justify;
+    font-size: 1.1rem;
+    padding-top: 2rem;
+}
+
+.vocal_guitar_section .card-body,  .key_rhythm_section .card-body{
+    background-color: rgba(72, 40, 78, 0.9);
+    color: #fff !important;
+}
+
+#faq{
+    margin-top: -10vh;
+}
+
+#faq .accordion_sec button{
+    background:  var(--bg-color);
+    color: #fff !important;
+}
+
+.accordion-body{
+    background-color: rgba(72, 40, 78, 0.9);
+    color: #fff;
+}
+.accordion-button::after{
+    background-image: none !important;
+}
+
+/* <--------COURSE PAGE ENDS HERE---------> */
+
+/* <------ FOOTER CSS ---------->*/
+.footer_section{
+    position: relative;
+    background: var(--bg-color);
+}
+
+.footer-cta{
+    border-bottom: 1px solid var(--light-black);
+}
+
+.single-cta i{
+    color: var(--violet);
+    float: left;
+}
+
+.mail-cta{
+    display: flex;
+}
+
+.cta-text{
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.cta-text h6{
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cta-text span{
+    font-size: 12px;
+    color: var(--dark-grey);
+}
+
+.footer-content{
+    position: relative;
+    z-index: 2;
+}
+
+.footer-logo{
+    margin-bottom: 5vh;
+}
+
+.footer-logo a{
+    text-decoration: none !important;
+    color: var(--violet);
+    font-size: 4rem;
+    pointer-events: none;
+}
+
+.footer-social-icons span{
+    color: #ffff;
+   margin-bottom: 2rem;
+    font-size: 2rem;
+    display: block;
+    font-weight: 700;
+}
+
+.footer-social-icons a{
+    color: #ffff;
+    margin-right: 1rem;
+    font-size: 16px !important;
+}
+
+.footer-social-icons a:hover{
+    color: #fff;
+}
+
+.footer-social-icons i{
+    width: 40px; height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 38px;
+}
+
+.fb-bg{
+    background: var(--facebook);
+}
+
+.tw-bg{
+    background: var(--twitter);
+}
+
+.yt-bg{
+    background: var(--youtube);
+}
+
+.footer-widget-heading{
+    color: #fff;
+    margin-top: 2vh;
+}
+
+.footer-widget-heading hr{
+    width: 140px; height: 2px;
+    background-color: var(--violet) ;
+}
+
+.footer-widget ul li{
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.footer-widget ul li a{
+    color: var(--dark-grey-3);
+}
+
+.footer-widget ul li a:hover{
+    color: var(--violet);
+}
+
+.copyright-area{
+    background-color: var(--light-black-3) !important;
+    padding-top: 2vh;
+    box-shadow: 2rem 1rem #fff;
+}
+
+.copy-right-text{
+    color: #fff;
+}
+
+.copy-right-text p a{
+    text-decoration: none;
+    color: var(--violet);
+}
+
+/* <------ FOOTER CSS ENDS HERE ---------->*/
+
+/* <------ MEDIA QUERIES -------> */
+@media screen and (max-width:1199px) and (min-width:992px){
+    /* Course Page */
+    .vocal_section .image{
+        height: 27rem;
+    }
+    .guitar_section .image{
+        height: 27rem;
+    }
+    .key_instrument_section .image{
+        height: 30rem;
+    }
+    .rhythm_section .image{
+        height: 28rem;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .top_resize{
+        margin-top: 2vh !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Nav Section */
+    .logo_top{
+        font-size: 3.2vh !important;
+    }
+    .navbar #a{
+        font-size: 10px;
+    }
+    /* Footer Section */
+    .footer-widget-heading{
+        margin-top: 5vh;
+    }
+    .cta-text span {
+        font-size: 11px;
+    }
+    .footer-logo a{
+        font-size: 3rem;
+    }
+
+    /* Home Page */
+    .carousel-image-1, .carousel-image-2, .carousel-image-3{
+        background-position: 40% 40%;
+    }
+    .carousel-caption h1{
+        font-size: 5rem !important;
+    }
+    .carousel-caption h2{
+        font-size: 3rem !important;
+    }
+    .content h3{
+        font-size: 2.5rem !important;
+        margin-top: -2vh !important;
+    }
+    .btn {
+        font-size: 15px !important;
+    }
+    .home_course_sec2{
+        margin-top: 30vh !important;
+    }
+    #gal h1 {
+        font-size: 2rem !important;
+    }
+    #gal p {
+        font-size: 1rem !important;
+    }
+  
+    /* About Us Page */
+    #MainAboutUs .header-text h2 {
+        font-size: 3rem;
+        text-shadow: 2px 2px var(--light-black-3);
+    }
+    #MainAboutUs .header-text h4{
+        font-size: 1rem;
+        text-shadow: 1px 1px var(--light-black-3);
+    }
+    .school_history_text h2 {
+        font-size: 2rem;
+    }
+
+    /* Faculty Page */
+    #MainFaculty .header_image h2{
+        font-size: 2rem;
+    }
+    #MainFaculty .header_image h4{
+        font-size: 1rem;
+        margin-top: 3.5vh;
+    }
+    .school_mentor_heading h2{
+        font-size: 1.5rem !important;
+    }
+    .school_mentor_heading span{
+        font-size: 1rem;
+    }
+    .mentor{
+       text-align: justify !important;
+    }
+    .mentor h3{
+        text-align: left !important;
+    }
+    .mentor_details p{
+        text-align: left !important;
+    }
+    .details_icon{
+        text-align: left !important;
+    }
+
+    /* Course Page */
+    #MainCourse .header_image h2{
+        font-size: 3rem;
+        word-spacing: none !important;
+        letter-spacing: none !important;
+    }
+    #MainCourse .header_image h4 {
+        font-size: 1rem;
+    }
+    .school_course_heading h2 {
+        font-size: 2.5rem;
+    }
+    .school_course_heading span {
+        font-size: 1.2rem;
+    }
+    .top_resize{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:542px){
+    /* About Us Page */
+    .timing_table table{
+        width: 250px;
+    }
+    /* Course Page */
+    #MainCourse .header_image h2{
+        font-size: 2rem;
+    }
+    .school_course_heading h2 {
+        font-size: 2rem;
+    }
+    .school_course_heading span {
+        font-size: 1rem;
+    }
+    .vocal_guitar_section .card .card-body h4, .key_rhythm_section .card .card-body h4 {
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+    .vocal_guitar_section .card .card-body .sub, .key_rhythm_section .card .card-body .sub {
+        font-size: 1.2rem;
+    }
+    .vocal_guitar_section .card .card-body p, .key_rhythm_section .card .card-body p {
+        font-size: 1rem;
+        text-align: left !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    /* Nav Section */
+    .logo_top{
+        font-size: 1rem !important;
+    }
+     /* Home Page */
+    .carousel-caption h1{
+        font-size: 3.5rem !important;
+    }
+    .carousel-caption h2{
+        font-size: 2.5rem !important;
+    }
+    #about .image {
+        height: 24rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    /* Nav Section */
+    .logo_top{
+        font-size: 0.8rem !important;
+    }
+    /* Home Page */
+    .carousel-caption h1{
+        font-size: 3rem !important;
+        text-shadow: 2px 2px var(--bg-color);
+    }
+    .carousel-caption h2{
+        font-size: 2rem !important;
+        text-shadow: 2px 2px var(--bg-color);
+    }
+    /* About Us Page */
+    #MainAboutUs .header-text h2 {
+        font-size:2rem;
+    }
+    #MainAboutUs .header-text h4{
+        font-size: 1rem;
+    }
+}

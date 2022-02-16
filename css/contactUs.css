@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&family=Source+Serif+4:wght@300;400;500;700&family=Supermercado+One&display=swap');
+
+.cotact_us{
+    background-image: linear-gradient(to right, var(--light-black-2), var(--violet), var(--light-black-3) );
+    padding-bottom: 10vh;
+}
+
+.header_imgae_contact_us{
+    background-image: url('../images/contact_us_backgroynd2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: 65%;
+    border-bottom: 2px solid var(--light-black-3) !important;
+}
+
+.contact_us_sec{
+    margin-top: -15vh;
+}
+
+.header_imgae_contact_us h2{
+    font-size: 5rem;
+    text-shadow: 4px 4px #000000;
+    color: #ffffff;
+}
+
+.header_imgae_contact_us span{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px #000000;
+    color: #ffffff;
+    margin-bottom: 10vh;
+}
+
+.card1{
+    color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+}
+
+.card-body{
+    background-image: linear-gradient(to right, rgba(12, 7, 7, 0.9), rgba(65, 18, 65, 0.9), rgba(12, 7, 7, 0.9));
+}
+
+.card-body span{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.card-body a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.card-body a:hover{
+    color: #000;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .header_imgae_contact_us h2{
+        font-size: 3rem;
+        text-shadow: 2px 2px #000;
+    }
+    .header_imgae_contact_us span{
+        font-size: 1rem;
+    }
+    .card1{
+        margin: 4vh 9vh 8vh !important;
+    }
+    .contact_us_sec{
+        margin-top: 1vh;
+    }
+}
+
+@media screen and (max-width: 500px ){
+    .card-body h3{
+        font-size: 18PX;
+    }
+    .card-body h5{
+        font-size: 1rem;
+    }
+    .card-body span{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .card-body a{
+        font-size: 20px;
+    }
+}

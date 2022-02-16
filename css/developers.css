@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&family=Source+Serif+4:wght@300;400;500;700&family=Supermercado+One&display=swap');
+
+:root{
+    --blue: rgb(74, 7, 182);
+    --violet: #c63bfa;    
+    --primary-color: #ff5e14;
+    --bg-color: #151414;
+    --light-black: #373636;
+    --light-black-2: #2e2e2e;
+    --light-black-3: #202020;
+    --dark-grey: #757575;
+    --dark-grey-2: #7e7e7e;
+    --dark-grey-3: #878787;
+    --facebook: #3b5998;
+    --twitter: #55acee;
+    --youtube: rgb(238, 9, 9);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+
+.developersProfile{
+    background-image: linear-gradient(to right, var(--light-black-2), var(--violet), var(--light-black-3) );
+}
+
+.header_background_dev{
+    background-image: url("../images/developers_background.jpg");
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    background-size: cover;  
+    background-position: fixed;
+    height: 50vh;
+    border-bottom: 2px solid var(--light-black-3) !important;
+}
+
+.header_background_dev .header-text h2{
+    font-size: 5rem;
+    text-shadow: 3px 3px var(--light-black-3);
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    padding-top: 3rem;
+    color: #ffff;
+}
+
+.profile-area{
+    padding: 80px 0;
+}
+
+.card1{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgba(12, 7, 7, 0.9), rgba(65, 18, 65, 0.9), rgba(12, 7, 7, 0.9));
+    cursor: pointer;
+}
+
+.img1 img{
+    height: 200px;
+    /* border-top-right-radius: 15px;
+    border-top-left-radius: 15px; */
+    width: 100%;
+    border-bottom: 1px solid rgb(192, 186, 186);
+}
+
+.img2{
+    margin-top: -80px;
+}
+
+.img2 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #fff; 
+    transition: 0.7s;
+}
+
+.card1:hover .img2 img{
+    border-color: darkcyan;
+}
+
+.main-text{
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.main-text h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.main-text p{
+    font-size: 16px;
+    padding: 0 35px;
+}
+
+.socials{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.socials i{
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.socials i:hover{
+    transform: translateY(-10px);
+}
