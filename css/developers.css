@@ -48,10 +48,19 @@
     letter-spacing: 5px;
     padding-top: 3rem;
     color: #ffff;
+    margin-top: 10vh;
 }
 
 .profile-area{
     padding: 80px 0;
+}
+
+.profile-area-header-text h2{
+    font-size: 3rem;
+    text-shadow: 2px 2px var(--light-black-3);
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    margin-top: -1rem;
 }
 
 .card1{
@@ -64,8 +73,6 @@
 
 .img1 img{
     height: 200px;
-    /* border-top-right-radius: 15px;
-    border-top-left-radius: 15px; */
     width: 100%;
     border-bottom: 1px solid rgb(192, 186, 186);
 }
@@ -83,7 +90,7 @@
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 3px solid #fff; 
+    border: 6px solid #fff; 
     transition: 0.7s;
 }
 
@@ -107,6 +114,7 @@
 .main-text p{
     font-size: 16px;
     padding: 0 35px;
+    text-transform: capitalize;
 }
 
 .socials{
@@ -122,5 +130,24 @@
 }
 
 .socials i:hover{
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    color: rgb(2, 114, 114);
+}
+
+
+/* Responsive Css */
+@media screen and (max-width: 991px) {
+    .header_background_dev .header-text h2{
+        font-size: 3rem !important;
+    }
+    .profile-area-header-text h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 379px){
+    .header_background_dev .header-text h2{
+        font-size: 2.5rem !important;
+        margin-top: 8px !important;
+    }
 }
