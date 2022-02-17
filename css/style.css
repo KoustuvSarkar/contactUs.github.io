@@ -282,48 +282,110 @@
 
 .school_mentor_heading h2{
     font-size: 3rem;
+    text-shadow: 2px 2px var(--light-black-3);
 }
 
 .school_mentor_heading span{
     font-size: 1.5rem;
+    text-shadow: 2px 2px var(--light-black-3);
 }
 
-.mentor .mentor_img{
-    background-image: url("../images/faculty_pic1.jpg");
-    background-size: cover;
-    background-blend-mode: screen;
-    border-radius: 2vh;
-    height: 23rem;
+.school_mentor_sec .card{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgba(12, 7, 7, 0.9), rgba(65, 18, 65, 0.9), rgba(12, 7, 7, 0.9));
+    cursor: pointer;
 }
 
-.mentor h2{
-    font-size: 2rem;
-    font-weight: 500;
+.fac_img1 img{
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid rgb(192, 186, 186);
 }
 
-.mentor span{
-    font-size: 1.5rem;
-    font-weight: 400;
+.fac_img2{
+    margin-top: -80px;
 }
 
-.mentor p{
-    font-size: 1.2rem;
-    text-align: justify;
-    word-spacing: 2px !important;
+.fac_img2 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    border: 3px solid #fff; 
+    transition: 0.7s;
 }
 
-.mentor_details p{
-    text-align: center !important;
+.school_mentor_sec .card:hover .fac_img2 img{
+    border-color: #3b5998;
 }
 
-.details_icon a{
+.fac_about_text{
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.fac_about_text h2 a{
     color: #fff;
     text-decoration: none;
-    padding: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 20px;
 }
 
-.details_icon a:hover{
-    color: var(--bg-color);
+.fac_about_text p{
+    font-size: 16px;
+    padding: 0 35px;
+    text-transform: capitalize;
+}
+
+.fac_about_text h3{
+    font-size: 16px;
+    padding: 0 20px;
+    text-transform: capitalize;
+}
+
+.school_mentor_sec .card .socials{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -3vh;
+}
+
+.school_mentor_sec .card .socials i{
+    font-size: 20px;
+    padding: 8px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.school_mentor_sec .card .socials i:hover{
+    transform: translateY(-8px);
+}
+
+.fac_details_wrapper{
+    color: #fff;
+    background-image: linear-gradient(to right, rgba(12, 7, 7, 0.9), rgba(65, 18, 65, 0.9), rgba(12, 7, 7, 0.9));;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fac_details_comments h5{
+    font-size: 25px;
+}
+
+.fac_details_comments h6{
+    font-size: 15px;
+}
+
+.fac_details_comments p{
+    font-size: 12px;
 }
 
 /* <-------FACULTY PAGE CSS ENDS HERE--------------> */
@@ -617,16 +679,19 @@
     /* Faculty Page */
     #MainFaculty .header_image h2{
         font-size: 2rem;
+        text-shadow: 2px 2px var(--light-black-3);
     }
     #MainFaculty .header_image h4{
         font-size: 1rem;
         margin-top: 3.5vh;
+        text-shadow: 1px 1px var(--light-black-3);
     }
     .school_mentor_heading h2{
         font-size: 1.5rem !important;
     }
     .school_mentor_heading span{
         font-size: 1rem;
+        text-shadow: 1px 1px var(--light-black-3);
     }
     .mentor{
        text-align: justify !important;
@@ -661,6 +726,12 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .top_resize_2{
+        margin-top: 2vh !important;
+    }
+}
+
 @media screen and (max-width:542px){
     /* About Us Page */
     .timing_table table{
@@ -669,6 +740,7 @@
     /* Course Page */
     #MainCourse .header_image h2{
         font-size: 2rem;
+        text-shadow: 2px 2px var(--light-black-3);
     }
     .school_course_heading h2 {
         font-size: 2rem;
